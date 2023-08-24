@@ -14,8 +14,10 @@ const userSchema = new mongoose.Schema({
     },
     bio:String,
     national_id_number:Number,
-    national_id_pic:String,
-    national_id_pic_with_user_face:String,
+    report:{
+      type:String,
+      default:null,
+    },
     products:[{
         type: mongoose.Schema.ObjectId,
         ref: 'Products',
