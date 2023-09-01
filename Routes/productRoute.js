@@ -23,7 +23,7 @@ const router = express.Router();
 
 router
   .route("/")
-  .get(protect, getProducts)
+  .get( getProducts)
   .post(
     protect,
     authController.restictTo("seller", "admin"),

@@ -13,7 +13,7 @@ const {
 
 const router = express.Router();
 
-router.route("/signup").post(signupvalidator, singup);
+router.route("/signup").post(signupvalidator,singup);
 router.route("/login").post(loginvalidator, login);
 // router.route('/:id')
 //     .get(getuservalidator, getuser)
