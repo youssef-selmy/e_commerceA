@@ -81,12 +81,12 @@ const productSchema = new mongoose.Schema({
 });
 
 //mongoose midelware
-// productSchema.pre(/^find/, function(next) {
-//     this.populate({
-//         path: "category",
-//         select: "name -__id",
-//     });
-//     next();
-// });
+productSchema.pre(/^find/, function(next) {
+    this.populate({
+        path: 'category',
+        select: 'name',
+    });
+    next();
+});
 
 module.exports = mongoose.model('Product', productSchema);

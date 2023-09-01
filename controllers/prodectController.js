@@ -10,7 +10,7 @@ const {cloudinaryRemoveImage,cloudinaryUploadImage}=require('../utils/cloudinary
 //desc get list of product
 //route get/api/v1/product
 //public
-exports.getProducts = factory.getAll(Product, "product")
+exports.getProducts = factory.getAll(Product, "Products")
 
 //get single product
 //route get/api/v1/product/:id

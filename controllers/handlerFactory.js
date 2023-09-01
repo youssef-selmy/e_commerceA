@@ -56,7 +56,7 @@ exports.getOne = (Model) => asyncHandler(async(req, res, next) => {
 
 
 
-exports.getAll = (Model, modelName = '') => asyncHandler(async(req, res) => {
+exports.getAll = (Model, modelName ) => asyncHandler(async(req, res) => {
     let filter = {}
     if (req.filterobj) {
         filter = req.filterobj
